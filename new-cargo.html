@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gegify Admin Dashbord</title>
+
+  <!-- CDN START -->
+  <!-- BOOTSRAP CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/inputs.css" />
+
+  <!-- FONT GOOGLE-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- CDN END -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Aside Start -->
+      <div class="col-auto app-left">
+        <!-- Aside Start -->
+        <aside class="app-aside d-none d-md-inline-flex max-vh-100">
+          <!-- logo Start -->
+          <div class="aside-logo">
+            <img style="width: 40%" src="img/logo.png" alt="LOGO" />
+          </div>
+          <!-- logo End -->
+          <!-- Aside Profile-Menu-Profile Start -->
+          <div class="aside-menu-user px-3">
+            <!-- Profile Up,Menu Start  -->
+            <div class="d-flex flex-column gap-5">
+              <!-- Profile-Up Details Start -->
+              <div class="aside-user-details align-content-center gap-3">
+                <img style="width: 30%" src="img/user-up.jpg" alt="User" />
+                <div class="d-flex flex-column align-items-center d-none d-xl-inline-flex">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Developer</p>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-center d-none d-xl-inline-flex">
+                  <div class="d-flex gap-3">
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>Income</p>
+                    <p>Expense</p>
+                    <p>Sales</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile-Up Details End -->
+
+              <!-- Menu Start -->
+              <ul class="nav nav-pills flex-column">
+                <!-- General -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-general"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> dashboard</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>GENERAL</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-general" class="collapse show flex-column">
+                    <li class="nav-item">
+                      <a href="dashboard.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Dashbord</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Compents -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-compents"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> storefront</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>COMPENTS</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-compents" class="collapse show flex-column">
+                    <li class="nav-item mb-1">
+                      <a href="orders.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Orders</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="cargo.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Cargo</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="advert.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Ads</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="finance.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Finance</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="message.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Message</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Data -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-data"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      account_tree
+                    </span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>DATA</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-data" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="product.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Product</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="#" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Calendar</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="person.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Personal</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Profile -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-profile"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      manage_accounts</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>PROFILE</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-profile" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="users-activity.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Users</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="settings.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Menu End -->
+            </div>
+            <!-- User-down Start -->
+            <div class="aside-down-user d-flex align-items-center justify-content-between gap-3">
+              <div class="d-flex align-items-center d-none d-xl-inline-flex gap-2">
+                <img style="width: 30%;" src="img/user-down.png" alt="" />
+                <div class="d-flex flex-column">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Admin</p>
+                </div>
+              </div>
+              <div>
+                <a href="settings.html"><span style="font-size: 20px;" class="material-symbols-outlined">tune</span></a> 
+                <a href="#"><span style="font-size: 20px;" class="material-symbols-outlined">close</span></a> 
+              </div>
+            </div>
+            <!-- User-down Start -->
+          </div>
+          <!-- Aside Profile-Menu-Profile End -->
+        </aside>
+        <!--Aside End  -->
+      </div>
+      <!-- Left Aside End -->
+
+      <!-- Right Header Main Start -->
+      <div class="col app-right p-0">
+        <!-- Header Start -->
+        <header class="app-header">
+          <div class="d-search-lg d-light">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" class="form-control form-control-transparent" />
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between gap-5">
+            <span class="material-symbols-outlined"> tune </span>
+            <button type="button" class="btn btn-dark btn-icon-lg">
+              <span style="color: white; font-size: 20px" class="material-symbols-outlined">logout</span>
+              Log Out
+            </button>
+          </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Start -->
+        <main class="app-main">
+          <div class="container-fluid">
+            <div class="row gap-5">
+              <!-- New Cargo Header Start  -->
+              <div class="d-flex justify-content-between">
+                <!-- Header-Left Start  -->
+                <div class="d-flex flex-column gap-3">
+                  <h5>NEW CARGO</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam cupiditate mollitia quas numquam, similique soluta
+                    modi natus in doloremque vitae!
+                  </p>
+                </div>
+                <!-- Header-Left Start  -->
+
+                <!-- Header-Right Start  -->
+                <div class="d-flex align-items-center gap-2">
+                  <!-- Csv Button Start -->
+                  <button type="button" data-target="#modalcsv" data-toggle="modal" class="btn text-danger">
+                    Move to Trash
+                  </button>
+                  <!-- Csv Button End -->
+
+                  <button type="button" class="btn btn-dark btn-icon-md">
+                    Save
+                  </button>
+                </div>
+
+                <!-- Header-Right Start  -->
+              </div>
+
+              <!-- New Cargo Content Start -->
+              <div class="row justify-content-between ">
+
+                <!-- New Cargo Left -->
+                <div class="col-xl-9 col-lg-7 col-md-6 col-sm-12  pe-5">
+                  <!-- Reciever,Informations Cargo -->
+                  <div class="col-xl-12 mb-4">
+                    <div class="row">
+                      <!-- Reciever Cargo  -->
+                      <div class="col-xl-6 col-lg-12  gap-4 mb-5">
+                        <!-- Header Start -->
+                        <div class="d-flex flex-column gap-2 mb-5">
+                          <h6>RECEIVER INFORMATIONS</h6>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.Eius, quae.
+                          </p>
+                        </div>
+                        <!-- Header End -->
+                        <!-- Form Left  -->
+                        <form class="row g-4">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="inputEmail4" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputEmail4" />
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="inputPassword4" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="inputPassword4" />
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp" />
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="inputState" class="form-label">Phone Number</label>
+                            <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary dropdown-toggle d-border" type="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                US +1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">TR +90</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">GB +44</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">FR +33</a>
+                                </li>
+                              </ul>
+                              <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                              placeholder="Apartment, studio, or floor" />
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity" />
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-2 col-md-6">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" />
+                          </div>
+                          <div class="col-lg-5 col-md-6">
+                            <label for="inputState" class="form-label">Country</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>United State America</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-5 col-md-12">
+                            <label for="inputState" class="form-label">Shopping Date</label>
+                            <button class="btn btn-light btn-icon-sm" type="button" id="dropdownMenuButton"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span style="font-size: 20px"
+                                class="material-symbols-outlined">calendar_month</span>05.08.2023
+                            </button>
+
+                          </div>
+                        </form>
+                      </div>
+                      <!-- Informations Cargo -->
+                      <div class="col-xl-6 col-lg-12 gap-4">
+                        <!-- Header Start -->
+                        <div class="d-flex flex-column gap-2 mb-5">
+                          <h6>CARGO INFORMATIONS</h6>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.Eius, quae.
+                          </p>
+                        </div>
+                        <img style="width: 60%" src="img/Cargo-Box.png" alt="" />
+                        <!-- Form Left  -->
+                        <form class="row g-4">
+                          <div class="col-lg-4 col-md-4">
+                            <label for="inputEmail4" class="form-label">X-Lenght</label>
+                            <input type="text" class="form-control" id="inputEmail4" />
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                            <label for="inputEmail4" class="form-label">Y-Lenght</label>
+                            <input type="text" class="form-control" id="inputEmail4" />
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                            <label for="inputEmail4" class="form-label">Z-Lenght</label>
+                            <input type="text" class="form-control" id="inputEmail4" />
+                          </div>
+                          <div class="col-lg-12 col-md-12">
+                            <label for="inputEmail4" class="form-label">Weight</label>
+                            <input type="text" class="form-control" id="inputEmail4" />
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- Product Informations -->
+                  <div class="col-12 gap-4 mb-5">
+                    <!-- Header Start -->
+                    <div class="d-flex flex-column gap-2 mb-5">
+                      <h6>PRODUCT INFORMATIONS</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicingelit. Eius, quae.
+                      </p>
+                    </div>
+                    <!-- Header End -->
+
+                    <!-- Form Right  -->
+                    <form class="row g-5">
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputState" class="form-label">Category</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Shoes</option>
+                          <option>...</option>
+                        </select>
+                        <div class="form-text" id="basic-addon4">
+                          Example help text goes outside the input group.
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputState" class="form-label">Brand</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Nike</option>
+                          <option>...</option>
+                        </select>
+                        <div class="form-text" id="basic-addon4">
+                          Example help text goes outside the input group.
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputState" class="form-label">Product Name</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Nike Shoe</option>
+                          <option>...</option>
+                        </select>
+                        <div class="form-text" id="basic-addon4">
+                          Example help text goes outside the input group.
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputState" class="form-label">Varition</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>5 US size</option>
+                          <option>...</option>
+                        </select>
+                        <div class="form-text" id="basic-addon4">
+                          Example help text goes outside the input group.
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-3">
+                        <label for="inputState" class="form-label">Status</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Pending Payment</option>
+                          <option>...</option>
+                        </select>
+
+                      </div>
+                      <div class="col-lg-2 col-md-3">
+                        <label for="inputEmail4" class="form-label">Piece</label>
+                        <input type="text" class="form-control" id="inputEmail4" />
+
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputEmail4" class="form-label">SKU</label>
+                        <input type="text" class="form-control" id="inputEmail4" />
+
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <label for="inputEmail4" class="form-label">Sale Price</label>
+                        <input type="text" class="form-control" id="inputEmail4" />
+
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+
+                <!-- New Cargo Right -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-cargo-open">
+                  <div class="col-12 gap-5 p-4">
+                    <!-- Header Start -->
+                    <div class="d-flex flex-column gap-3 mb-5">
+                      <h6>SHIPPING STATUS</h6>
+                      <p> You can change the status of your cargo.
+                      </p>
+                    </div>
+                    <form class="row g-4">
+                      <div class="col-lg-7 col-md-12 mb-3">
+                        <label for="inputState" class="form-label"><strong>Cargo Status</strong></label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Surrendered</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-7 col-md-12 mb-3">
+                        <label for="inputState" class="form-label"><strong>Cargo Company</strong></label>
+                        <select id="inputState" class="form-select">
+                          <option selected>UPS</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-12 col-md-12 mb-3">
+                        <label for="inputEmail4" class="form-label"><strong>Cargo Number</strong></label>
+                        <label for="inputEmail4" class="form-label">In case the tracking URL requires multiple codes,
+                          insert them by separating using the "," character. Example: "code1,code2,code2"</label>
+
+                        <input type="text" class="form-control" id="inputEmail4" />
+
+                      </div>
+                      <div class="col-lg-7 col-md-12 mb-3">
+                        <label for="inputState" class="form-label"><strong>Disable email embedding</strong></label>
+                        <label for="inputEmail4" class="form-label">This overrides the General option -> Email options
+                          settings allowing you to not embed any tracking info into emails</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>No</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-12 col-md-12 ">
+                        <label for="inputEmail4" class="form-label"><strong>Custom Text</strong></label>
+                        <label for="inputEmail4" class="form-label">Enter a description of the cargo status that your
+                          customer can see</label>
+
+                        <input type="text" class="form-control" id="inputEmail4" />
+
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- New Cargo Content End -->
+            </div>
+          </div>
+        </main>
+        <!-- Main End -->
+      </div>
+      <!-- Right Header Main End -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gegify Admin Dashbord</title>
+
+  <!-- CDN START -->
+  <!-- BOOTSRAP CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- AWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/inputs.css" />
+
+  <!-- FONT GOOGLE-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- CDN END -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Aside Start -->
+      <div class="col-auto app-left">
+        <!-- Aside Start -->
+        <aside class="app-aside d-none d-md-inline-flex max-vh-100">
+          <!-- logo Start -->
+          <div class="aside-logo">
+            <img style="width: 40%" src="img/logo.png" alt="LOGO" />
+          </div>
+          <!-- logo End -->
+          <!-- Aside Profile-Menu-Profile Start -->
+          <div class="aside-menu-user px-3">
+            <!-- Profile Up,Menu Start  -->
+            <div class="d-flex flex-column gap-5">
+              <!-- Profile-Up Details Start -->
+              <div class="aside-user-details align-content-center gap-3">
+                <img style="width: 30%" src="img/user-up.jpg" alt="User" />
+                <div class="d-flex flex-column align-items-center d-none d-xl-inline-flex">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Developer</p>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-center d-none d-xl-inline-flex">
+                  <div class="d-flex gap-3">
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>Income</p>
+                    <p>Expense</p>
+                    <p>Sales</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile-Up Details End -->
+
+              <!-- Menu Start -->
+              <ul class="nav nav-pills flex-column">
+                <!-- General -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-general"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> dashboard</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>GENERAL</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-general" class="collapse show flex-column">
+                    <li class="nav-item">
+                      <a href="dashboard.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Dashbord</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Compents -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-compents"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> storefront</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>COMPENTS</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-compents" class="collapse show flex-column">
+                    <li class="nav-item mb-1">
+                      <a href="orders.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Orders</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="cargo.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Cargo</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="advert.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Ads</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="finance.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Finance</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="message.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Message</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Data -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-data"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      account_tree
+                    </span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>DATA</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-data" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="product.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Product</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="#" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Calendar</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="person.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Personal</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Profile -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-profile"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      manage_accounts</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>PROFILE</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-profile" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="users-activity.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Users</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="settings.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Menu End -->
+            </div>
+            <!-- User-down Start -->
+            <div class="aside-down-user d-flex align-items-center justify-content-between gap-3">
+              <div class="d-flex align-items-center d-none d-xl-inline-flex gap-2">
+                <img style="width: 30%;" src="img/user-down.png" alt="" />
+                <div class="d-flex flex-column">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Admin</p>
+                </div>
+              </div>
+              <div>
+                <a href="settings.html"><span style="font-size: 20px;" class="material-symbols-outlined">tune</span></a> 
+                <a href="#"><span style="font-size: 20px;" class="material-symbols-outlined">close</span></a> 
+              </div>
+            </div>
+            <!-- User-down Start -->
+          </div>
+          <!-- Aside Profile-Menu-Profile End -->
+        </aside>
+        <!--Aside End  -->
+      </div>
+
+      <!-- Right Header Main Start -->
+      <div class="col app-right p-0">
+        <!-- Header Start -->
+        <header class="app-header">
+          <div class="d-search-lg d-light">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" class="form-control form-control-transparent" />
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between gap-5">
+            <span class="material-symbols-outlined"> tune </span>
+            <button type="button" class="btn btn-dark btn-icon-lg">
+              <span style="color: white; font-size: 20px" class="material-symbols-outlined">logout</span>
+              Log Out
+            </button>
+          </div>
+        </header>
+        <!-- Main Start -->
+        <main class="app-main">
+          <div class="container-fluid">
+            <div class="row gap-4">
+              <!-- Finance Left -->
+              <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12">
+                <!-- Orders Header Start  -->
+                <div class="row mb-5">
+                  <div class="col d-flex flex-column gap-3">
+                    <h5>FINANCE</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam cupiditate mollitia quas numquam, similique soluta
+                      modi natus in doloremque vitae!
+                    </p>
+                  </div>
+                  <div class="col d-flex justify-content-end gap-2">
+                    <!-- Add Transfer Buton -->
+                    <button type="button" class="btn btn-dark btn-icon-md" data-target="#modal-addtransfer"
+                      data-toggle="modal">
+                      <span style="color: white; font-size: 20px" class="material-symbols-outlined">add </span>Add Transfer
+                    </button>
+                    <!-- Add Transfer Modal -->
+                    <div class="modal" id="modal-addtransfer" tabindex="-1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Add Transfer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body my-3">
+                            <div class="container">
+                              <div class="row justify-content-center gap-5">
+                                <!-- Left -->
+                                <div class="col d-flex flex-column gap-4">
+                                  <p><strong>Transfer Details</strong></p>
+                                  <!-- Form Left  -->
+                                  <form class="row g-3">
+                                    <div class="col-12">
+                                      <label for="inputState" class="form-label">Sender</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Emay Walter</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputState" class="form-label">Reciever</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>UPS</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputState" class="form-label">Transfer</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>incoming transfer</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                  </form>
+                                </div>
+                                <!-- Right -->
+                                <div class="col d-flex flex-column justify-content-end gap-4">
+                                  <!-- Form Left  -->
+                                  <form class="row g-3">
+                                    <div class="col-12">
+                                      <label for="inputState" class="form-label">Price</label>
+                                      <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control"
+                                          aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputState" class="form-label">Status</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Not Paid</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-6">
+                                      <label for="inputState" class="form-label">Transfer Date</label>
+                                      <button class="btn btn-light btn-icon-sm" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span style="font-size: 20px;"
+                                          class="material-symbols-outlined">calendar_month</span>05.08.2023
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                                <!-- Check -->
+                                <div class="form-check mx-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Overwrite any current products that have the same handle. Existing values will be
+                                    used for any missing columns. Learn more
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer justify-content-between mx-3">
+                            <div>
+                              <a style="text-decoration-line: underline;" href="">do you need help ?</a>
+                            </div>
+                            <div class="d-flex gap-3">
+                              <button type="button" class="btn btn-light btn-icon-sm"
+                                data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-dark btn-icon-sm">Save changes</button>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sales Start -->
+                <div class="row mb-5 ">
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <div class="main-up-cards">
+                      <!-- Cards Left Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start gap-4">
+                        <p>Total Sales</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 id="main-up-cards-symbol">$</h5>
+                          <h5 id="main-up-totalP-price">18.525.10</h5>
+                        </div>
+
+                        <div class="main-up-cards-trend">
+                          <span class="material-symbols-outlined">trending_up</span>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h6 id="main-up-totalP-trend-graphic">%</h6>
+                            <h6 id="main-up-totalP-trend-number">18.5</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Cards Left End -->
+                      <!-- Cards Right Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start">
+                        <span class="material-symbols-outlined">
+                          more_vert</span>
+                      </div>
+                      <!-- Cards Right End -->
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <div class="main-up-cards">
+                      <!-- Cards Left Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start gap-4">
+                        <p>Today Sales</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 id="main-up-cards-symbol">$</h5>
+                          <h5 id="main-up-totalP-price">18.525.10</h5>
+                        </div>
+
+                        <div class="main-up-cards-trend">
+                          <span class="material-symbols-outlined">trending_up</span>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h6 id="main-up-totalP-trend-graphic">%</h6>
+                            <h6 id="main-up-totalP-trend-number">18.5</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Cards Left End -->
+                      <!-- Cards Right Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start">
+                        <span class="material-symbols-outlined">
+                          more_vert</span>
+                      </div>
+                      <!-- Cards Right End -->
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <div class="main-up-cards">
+                      <!-- Cards Left Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start gap-4">
+                        <p>This Week Sales</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 id="main-up-cards-symbol">$</h5>
+                          <h5 id="main-up-totalP-price">18.525.10</h5>
+                        </div>
+
+                        <div class="main-up-cards-trend">
+                          <span class="material-symbols-outlined">trending_up</span>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h6 id="main-up-totalP-trend-graphic">%</h6>
+                            <h6 id="main-up-totalP-trend-number">18.5</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Cards Left End -->
+                      <!-- Cards Right Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start">
+                        <span class="material-symbols-outlined">
+                          more_vert</span>
+                      </div>
+                      <!-- Cards Right End -->
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <div class="main-up-cards">
+                      <!-- Cards Left Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start gap-4">
+                        <p>Earning</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 id="main-up-cards-symbol">$</h5>
+                          <h5 id="main-up-totalP-price">18.525.10</h5>
+                        </div>
+
+                        <div class="main-up-cards-trend">
+                          <span class="material-symbols-outlined">trending_up</span>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h6 id="main-up-totalP-trend-graphic">%</h6>
+                            <h6 id="main-up-totalP-trend-number">18.5</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Cards Left End -->
+                      <!-- Cards Right Start -->
+                      <div class="d-flex flex-column justify-content-between align-items-start">
+                        <span class="material-symbols-outlined">
+                          more_vert</span>
+                      </div>
+                      <!-- Cards Right End -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Payments Start -->
+                <div class="row mb-5 g-5">
+                  <!-- Ads Payments Start -->
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <!-- Header Start -->
+                    <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                      <h6>Ads Payments</h6>
+                      <div class="d-flex align-items-center justify-content-between gap-2">
+                        <p>WIEW</p>
+                        <span class="material-symbols-outlined">navigate_next</span>
+                      </div>
+                    </div>
+
+                    <!-- Content Start -->
+                    <!-- 1 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/facebook-icon.jpg" alt="Ads1" />
+                        <div class="align-items-center">
+                          <p>FACEBOOK</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/google-icon.jpg" alt="Ads2" />
+                        <div class="align-items-center">
+                          <p>GOOGLE</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>50.00</p>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/facebook-icon.jpg" alt="Ads3" />
+                        <div class="align-items-center">
+                          <p>FACEBOOK</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>199.00</p>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/google-icon.jpg" alt="Ads2" />
+                        <div class="align-items-center">
+                          <p>GOOGLE</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>50.00</p>
+                      </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/facebook-icon.jpg" alt="Ads3" />
+                        <div class="align-items-center">
+                          <p>FACEBOOK</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>199.00</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Last Payments Start -->
+                  <div class="col-lg col-md-6 col-sm-12">
+                    <!-- Header Start -->
+                    <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                      <h6>Last Payments</h6>
+                      <div class="d-flex align-items-center justify-content-between gap-2">
+                        <p>WIEW</p>
+                        <span class="material-symbols-outlined">navigate_next</span>
+                      </div>
+                    </div>
+
+                    <!-- Content Start -->
+                    <!-- 1 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/behance-icon.jpg" alt="LastPayments1" />
+                        <div class="align-items-center">
+                          <p>BEHANCE</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/transfer-icon.jpg" alt="LastPayments3" />
+                        <div class="align-items-center">
+                          <p>OUTGOING TRANSFER</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>50.00</p>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/transfer-icon.jpg" alt="LastPayments2" />
+                        <div class="align-items-center">
+                          <p>INCOMING TRANSFER</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>20.00</p>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/transfer-icon.jpg" alt="LastPayments3" />
+                        <div class="align-items-center">
+                          <p>OUTGOING TRANSFER</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>50.00</p>
+                      </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/transfer-icon.jpg" alt="LastPayments2" />
+                        <div class="align-items-center">
+                          <p>INCOMING TRANSFER</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>20.00</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Cargo Payment Start -->
+                  <div class="col-lg col-md col-sm-12">
+                    <!-- Header Start -->
+                    <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                      <h6>Cargo Payment</h6>
+                      <div class="d-flex align-items-center justify-content-between gap-2">
+                        <p>WIEW</p>
+                        <span class="material-symbols-outlined">navigate_next</span>
+                      </div>
+                    </div>
+
+                    <!-- Content Start -->
+                    <!-- 1 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/ups-icon.jpg" alt="Cargo1" />
+                        <div class="align-items-center">
+                          <p>UPS</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/tnt-icon.jpg" alt="Cargo2" />
+                        <div class="align-items-center">
+                          <p>TNT</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/fedex-icon.jpg" alt="Cargo3" />
+                        <div class="align-items-center">
+                          <p>FEDEX</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/tnt-icon.jpg" alt="Cargo2" />
+                        <div class="align-items-center">
+                          <p>TNT</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="d-flex align-items-center justify-content-between mx-2 mb">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="img/fedex-icon.jpg" alt="Cargo3" />
+                        <div class="align-items-center">
+                          <p>FEDEX</p>
+                          <div class="d-flex align-items-center">
+                            <p>May 23, 2022 at 8:20 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <p>$</p>
+                        <p>99.00</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- Order Table Start -->
+                <div class="container-fluid px-2">
+                  <div class="col d-flex flex-column gap-2 mb-4">
+                    <h6>Last Payment Transactions</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam cupiditate mollitia quas numquam, similique soluta
+                      modi natus in doloremque vitae!
+                    </p>
+                  </div>
+                  <div class="table-responsive">
+                    <table style="text-align: center; " class="table table-responsive table-borderless ">
+                      <thead>
+                        <tr class="border-bottom">
+
+                          <th scope="col">Customer</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Account Data</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Price</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- 1 -->
+                        <tr>
+                          <td>INV-3061</td>
+                          <td>Sale</td>
+                          <td><span class="material-symbols-outlined">done</span>Paid</td>
+                          <td><i class="fa fa-cc-mastercard" aria-hidden="true"></i> Master Card • 5487 </td>
+                          <td>Jan 6 , 2023</td>
+                          <td>$199.00</td>
+                        </tr>
+                        <!-- 2 -->
+                        <tr>
+                          <td>INV-1061</td>
+                          <td>Sale</td>
+                          <td><span class="material-symbols-outlined">done</span>Paid</td>
+                          <td><i class="fa fa-cc-visa" aria-hidden="true"></i> Visa • 9350 </td>
+                          <td>Jan 6 , 2023</td>
+                          <td>$99.00</td>
+                        </tr>
+                        <!-- 3 -->
+                        <tr>
+                          <td>INV-9550</td>
+                          <td>Sale</td>
+                          <td><span class="material-symbols-outlined">done</span>Paid</td>
+                          <td><i class="fa fa-cc-mastercard" aria-hidden="true"></i> Master Card • 8005 </td>
+                          <td>Jan 6 , 2023</td>
+                          <td>$95.00</td>
+                        </tr>
+                        <!-- 4 -->
+                        <tr>
+                          <td>INV-1061</td>
+                          <td>Sale</td>
+                          <td><span class="material-symbols-outlined">done</span>Paid</td>
+                          <td><i class="fa fa-cc-visa" aria-hidden="true"></i> Visa • 9350 </td>
+                          <td>Jan 6 , 2023</td>
+                          <td>$99.00</td>
+                        </tr>
+                        <!-- 5 -->
+                        <tr>
+                          <td>INV-9550</td>
+                          <td>Sale</td>
+                          <td><span class="material-symbols-outlined">done</span>Paid</td>
+                          <td><i class="fa fa-cc-mastercard" aria-hidden="true"></i> Master Card • 8005 </td>
+                          <td>Jan 6 , 2023</td>
+                          <td>$95.00</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Finance Right -->
+              <div class="col d-cargo-open">
+                <div class="col-12 gap-5 p-4">
+                  <!-- Header Start -->
+                  <div class="d-flex flex-column gap-2 mb-5">
+                    <h6>Monthly Volume</h6>
+                    <p> You can change the status of your cargo.
+                    </p>
+                  </div>
+                  <!-- Category -->
+                  <ul class="nav orders-nav justify-content-start gap-2 mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link d-flex align-items-center gap-2" href="#" aria-current="page">Total
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link d-flex align-items-center gap-2" href="#" aria-current="page">Transction
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link d-flex align-items-center gap-2" href="#" aria-current="page">Day Sale
+                      </a>
+                    </li>
+
+                  </ul>
+                  <!-- Content -->
+                  <h4 class="mb-3">$2,243.34</h4>
+                  <p class="mb-5"> Shipping fees for weekly, monthly and annual calculations by country</p>
+                  <div class="d-flex flex-column gap-4 mb-5">
+                    <p><strong>Volume by Countries</strong></p>
+                    <div class="d-flex flex-column gap-4">
+                      <!-- 1 -->
+                      <div class="d-flex flex-column justify-content-between gap-2">
+                        <!-- Up -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                            <p>All Countries</p>
+                          </div>
+                          <p>$1,500.10</p>
+                        </div>
+                        <!-- Down -->
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                          <div class="progress-bar bg-black w-100"></div>
+                        </div>
+                      </div>
+                      <!-- 2 -->
+                      <div class="d-flex flex-column justify-content-between gap-2">
+                        <!-- Up -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                            <p>United State</p>
+                          </div>
+                          <p>$1,050.10</p>
+                        </div>
+                        <!-- Down -->
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                          <div class="progress-bar bg-black w-75"></div>
+                        </div>
+                      </div>
+                      <!-- 3 -->
+                      <div class="d-flex flex-column justify-content-between gap-2">
+                        <!-- Up -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                            <p>Germany</p>
+                          </div>
+                          <p>$820.00</p>
+                        </div>
+                        <!-- Down -->
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                          aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                          <div class="progress-bar bg-black w-50"></div>
+                        </div>
+                      </div>
+                      <!-- 4 -->
+                      <div class="d-flex flex-column justify-content-between gap-2">
+                        <!-- Up -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                            <p>United Kingdom</p>
+                          </div>
+                          <p>$390.00</p>
+                        </div>
+                        <!-- Down -->
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                          <div class="progress-bar bg-black w-25"></div>
+                        </div>
+                      </div>
+                      <!-- 5 -->
+                      <div class="d-flex flex-column justify-content-between gap-2">
+                        <!-- Up -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                            <p>Japan</p>
+                          </div>
+                          <p>$70.00</p>
+                        </div>
+                        <!-- Down -->
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                          <div class="progress-bar bg-black w-25"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ads Details -->
+                  <div class="d-flex flex-column justify-content-between align-items-start gap-1 mb-4">
+                    <p>Ads Details</p>
+                    <div class="d-flex justify-content-between align-items-center gap-5">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 id="main-up-cards-symbol">$</h5>
+                        <h5 id="main-up-totalP-price">18.525.10</h5>
+                      </div>
+
+                      <div class="main-up-cards-trend">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 id="main-up-totalP-trend-graphic">%</h6>
+                          <h6 id="main-up-totalP-trend-number">18.5</h6>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- Cargo Details -->
+                  <div class="d-flex flex-column justify-content-between align-items-start gap-1 mb-4">
+                    <p>Cargo Details</p>
+                    <div class="d-flex justify-content-between align-items-center gap-5">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 id="main-up-cards-symbol">$</h5>
+                        <h5 id="main-up-totalP-price">18.525.10</h5>
+                      </div>
+
+                      <div class="main-up-cards-trend">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 id="main-up-totalP-trend-graphic">%</h6>
+                          <h6 id="main-up-totalP-trend-number">18.5</h6>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- Payments Details -->
+                  <div class="d-flex flex-column justify-content-between align-items-start gap-1 mb-4">
+                    <p>Payments Details</p>
+                    <div class="d-flex justify-content-between align-items-center gap-5">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 id="main-up-cards-symbol">$</h5>
+                        <h5 id="main-up-totalP-price">18.525.10</h5>
+                      </div>
+
+                      <div class="main-up-cards-trend">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 id="main-up-totalP-trend-graphic">%</h6>
+                          <h6 id="main-up-totalP-trend-number">18.5</h6>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- Other Details -->
+                  <div class="d-flex flex-column justify-content-between align-items-start gap-1 ">
+                    <p>Other Details</p>
+                    <div class="d-flex justify-content-between align-items-center gap-5">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 id="main-up-cards-symbol">$</h5>
+                        <h5 id="main-up-totalP-price">18.525.10</h5>
+                      </div>
+
+                      <div class="main-up-cards-trend">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 id="main-up-totalP-trend-graphic">%</h6>
+                          <h6 id="main-up-totalP-trend-number">18.5</h6>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

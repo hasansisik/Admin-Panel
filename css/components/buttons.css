@@ -1,0 +1,92 @@
+button{
+cursor: pointer;
+border:none;
+}
+
+/* Button Style Start */
+
+/* Icons Button Start */
+.btn-only-icon{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-icon-name{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+.btn-icon-sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    height: 26px;
+}
+.btn-icon-md{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    height: 30px;
+}
+.btn-icon-lg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 34px;
+    padding: 0 25px;
+}
+/* Icons Button End*/
+
+
+/* Button Style Start */
+
+/* Buttons Color Start*/
+.btn-light{
+    border: 1px solid #dfdfdf;
+    background-color: transparent;
+}
+.btn-light:hover{
+    border: 1px solid rgb(222, 226, 230);
+    background-color: transparent;
+}
+
+.btn-secondary{
+    color: #000;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+}
+.btn-secondary:hover{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #f6f6f6;
+}
+
+/* Buttons Color Start*/
+
+/* Button Style End */
+
+
+/* Badge Start */
+.badge-long{
+width: 40px;
+border-radius: 15px;
+}
+.badge-circle{
+border-radius: 15px;
+}
+
+/* Badge End */

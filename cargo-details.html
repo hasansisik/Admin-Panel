@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gegify Admin Dashbord</title>
+
+  <!-- CDN START -->
+  <!-- BOOTSRAP CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/inputs.css" />
+
+  <!-- FONT GOOGLE-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- CDN END -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Aside Start -->
+      <div class="col-auto app-left">
+        <!-- Aside Start -->
+        <aside class="app-aside d-none d-md-inline-flex max-vh-100">
+          <!-- logo Start -->
+          <div class="aside-logo">
+            <img style="width: 40%" src="img/logo.png" alt="LOGO" />
+          </div>
+          <!-- logo End -->
+          <!-- Aside Profile-Menu-Profile Start -->
+          <div class="aside-menu-user px-3">
+            <!-- Profile Up,Menu Start  -->
+            <div class="d-flex flex-column gap-5">
+              <!-- Profile-Up Details Start -->
+              <div class="aside-user-details align-content-center gap-3">
+                <img style="width: 30%" src="img/user-up.jpg" alt="User" />
+                <div class="d-flex flex-column align-items-center d-none d-xl-inline-flex">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Developer</p>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-center d-none d-xl-inline-flex">
+                  <div class="d-flex gap-3">
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                    <p><strong>$18.5</strong></p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>Income</p>
+                    <p>Expense</p>
+                    <p>Sales</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile-Up Details End -->
+
+              <!-- Menu Start -->
+              <ul class="nav nav-pills flex-column">
+                <!-- General -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-general"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> dashboard</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>GENERAL</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-general" class="collapse show flex-column">
+                    <li class="nav-item">
+                      <a href="dashboard.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Dashbord</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Compents -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-compents"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined"> storefront</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>COMPENTS</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-compents" class="collapse show flex-column">
+                    <li class="nav-item mb-1">
+                      <a href="orders.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Orders</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="cargo.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Cargo</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="advert.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Ads</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="finance.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Finance</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="message.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Message</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Data -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-data"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      account_tree
+                    </span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>DATA</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-data" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="product.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Product</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                      <a href="#" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Calendar</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="person.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Personal</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Profile -->
+                <li class="nav-item">
+                  <a href="#" data-toggle="collapse" data-target="#aside-profile"
+                    class="nav-link d-flex align-items-center mb-2" aria-current="page">
+                    <span class="material-symbols-outlined">
+                      manage_accounts</span>
+                    <span class="ms-2 d-none d-xl-inline-flex"><strong>PROFILE</strong></span>
+                    <i class="material-symbols-outlined">expand_more</i>
+                  </a>
+                  <ul id="aside-profile" class="collapse show flex-column" data-bs-parent="">
+                    <li class="nav-item mb-1">
+                      <a href="users-activity.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Users</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="settings.html" class="nav-link d-flex align-items-center" aria-current="page">
+                        <span class="ms-2">Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Menu End -->
+            </div>
+            <!-- User-down Start -->
+            <div class="aside-down-user d-flex align-items-center justify-content-between gap-3">
+              <div class="d-flex align-items-center d-none d-xl-inline-flex gap-2">
+                <img style="width: 30%;" src="img/user-down.png" alt="" />
+                <div class="d-flex flex-column">
+                  <a href=""><strong>Emay Walter</strong></a>
+                  <p>Admin</p>
+                </div>
+              </div>
+              <div>
+                <a href="settings.html"><span style="font-size: 20px;" class="material-symbols-outlined">tune</span></a> 
+                <a href="#"><span style="font-size: 20px;" class="material-symbols-outlined">close</span></a> 
+              </div>
+            </div>
+            <!-- User-down Start -->
+          </div>
+          <!-- Aside Profile-Menu-Profile End -->
+        </aside>
+        <!--Aside End  -->
+      </div>
+      <!-- Left Aside End -->
+
+      <!-- Right Header Main Start -->
+      <div class="col app-right p-0">
+        <!-- Header Start -->
+        <header class="app-header">
+          <div class="d-search-lg d-light">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" class="form-control form-control-transparent" />
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between gap-5">
+            <span class="material-symbols-outlined"> tune </span>
+            <button type="button" class="btn btn-dark btn-icon-lg">
+              <span style="color: white; font-size: 20px" class="material-symbols-outlined">logout</span>
+              Log Out
+            </button>
+          </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Start -->
+        <main class="app-main-p">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Cargo Left -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 cargo-left gap-3">
+                <!-- Header Search-New Cargo -->
+                <div class="row align-items-center mb-4">
+                  <!-- Cargo Search -->
+                  <div class="col d-search-md d-border">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" class="form-control form-control-transparent" />
+                  </div>
+                  <!-- Cargo Add Order -->
+                  <div class="col-3">
+                    <button type="button" class="btn"><u><strong>Add Order</strong></u></button>
+                  </div>
+                </div>
+                <!-- Cargolar -->
+                <div class="container-fluid d-cargo-open">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p>Veronica Shler #2035</p>
+                      <p>27.03.2023 - 29.03.2023</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21 20" fill="none">
+                        <g clip-path="url(#clip0_273_268)">
+                          <path
+                            d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                            fill="#34A853" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_273_268">
+                            <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Surrendered</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex align-items-center gap-2">
+                      <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                      <p>UPS</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <p class="text-decoration-underline">
+                        1Z 191 547 54 15587
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row">
+                    <div class="col d-flex gap-2">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex gap-2 justify-content-end">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_land</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-cargo-off">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p>Veronica Shler #2035</p>
+                      <p>27.03.2023 - 29.03.2023</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21 20" fill="none">
+                        <g clip-path="url(#clip0_273_268)">
+                          <path
+                            d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                            fill="#34A853" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_273_268">
+                            <rect width="15" height="15" fill="white" transform="translate(0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Surrendered</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex align-items-center gap-2">
+                      <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                      <p>UPS</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <p class="text-decoration-underline">
+                        1Z 191 547 54 15587
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row">
+                    <div class="col d-flex gap-2">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex gap-2 justify-content-end">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_land</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-cargo-open">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p>Veronica Shler #2035</p>
+                      <p>27.03.2023 - 29.03.2023</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21 20" fill="none">
+                        <g clip-path="url(#clip0_273_268)">
+                          <path
+                            d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                            fill="#34A853" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_273_268">
+                            <rect width="15" height="15" fill="white" transform="translate(0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Surrendered</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex align-items-center gap-2">
+                      <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                      <p>UPS</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <p class="text-decoration-underline">
+                        1Z 191 547 54 15587
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row">
+                    <div class="col d-flex gap-2">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex gap-2 justify-content-end">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_land</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-cargo-off">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p>Veronica Shler #2035</p>
+                      <p>27.03.2023 - 29.03.2023</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21 20" fill="none">
+                        <g clip-path="url(#clip0_273_268)">
+                          <path
+                            d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                            fill="#34A853" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_273_268">
+                            <rect width="15" height="15" fill="white" transform="translate(0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Surrendered</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex align-items-center gap-2">
+                      <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                      <p>UPS</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <p class="text-decoration-underline">
+                        1Z 191 547 54 15587
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row">
+                    <div class="col d-flex gap-2">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex gap-2 justify-content-end">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_land</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-cargo-open">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p>Veronica Shler #2035</p>
+                      <p>27.03.2023 - 29.03.2023</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21 20" fill="none">
+                        <g clip-path="url(#clip0_273_268)">
+                          <path
+                            d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                            fill="#34A853" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_273_268">
+                            <rect width="15" height="15" fill="white" transform="translate(0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Surrendered</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex align-items-center gap-2">
+                      <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                      <p>UPS</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <p class="text-decoration-underline">
+                        1Z 191 547 54 15587
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row">
+                    <div class="col d-flex gap-2">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex gap-2 justify-content-end">
+                      <span style="font-size: 20px" class="material-symbols-outlined">flight_land</span>
+                      <div class="d-flex flex-column">
+                        <p>California USA</p>
+                        <p>Linkoln st 34/a 9005 IL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Cargo Center -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  cargo-left gap-3">
+                <!-- Header -->
+                <div class="row mb-4">
+                  <div class="col d-flex flex-column">
+                    <h5>Veronica Shler #2035</h5>
+                    <p>27.03.2023 - 29.03.2023</p>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-end gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                      <g clip-path="url(#clip0_273_268)">
+                        <path
+                          d="M10.5001 1.66666C5.89175 1.66666 2.16675 5.39166 2.16675 9.99999C2.16675 14.6083 5.89175 18.3333 10.5001 18.3333C15.1084 18.3333 18.8334 14.6083 18.8334 9.99999C18.8334 5.39166 15.1084 1.66666 10.5001 1.66666Z"
+                          fill="#34A853" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_273_268">
+                          <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p>Surrendered</p>
+                  </div>
+                </div>
+                <!-- Company -->
+                <div class="row mb-4">
+                  <div class="col d-flex align-items-center gap-4">
+                    <img src="img/ups-icon-2.png" alt="CargoCompany" />
+                    <p><strong>UPS</strong></p>
+                  </div>
+                  <div class="col d-flex justify-content-end">
+                    <button type="button" class="btn"><u><strong>EDIT</strong></u></button>
+                  </div>
+                </div>
+                <p><strong>Customer Details</strong></p>
+                <!-- Cargo Details -->
+                <div class="container-fluid d-cargo-open  mb-3">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Name :</strong></p>
+                      <p>Veronica Shler</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>Gmail:</strong></p>
+                      <p>Veronicashler@gmail.com</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>Phone :</strong></p>
+                      <p>+1 952 145 25 20</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Product :</strong></p>
+                      <p>Nike Air Jordan</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>Price :</strong></p>
+                      <p>$1.000</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>Piece :</strong></p>
+                      <p>5</p>
+                    </div>
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Lenght :</strong></p>
+                      <p>12x12x12</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>Weight :</strong></p>
+                      <p>12.00 KG</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <p><strong>SKU :</strong></p>
+                      <p>A-245AV</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col d-flex align-items-center justify-content-between gap-3">
+                    <p><strong>ROUTE</strong></p>
+                    <button type="button" class="btn"><u><strong>EDIT</strong></u></button>
+                  </div>
+
+                </div>
+                <!-- Departure -->
+                <div class="container-fluid d-cargo-open mb-5">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="d-flex gap-3">
+                      <span class="material-symbols-outlined">flight_takeoff</span>
+                      <div class="col d-flex flex-column gap-1">
+                        <p><strong>Chicago , United State</strong></p>
+                        <p>Rassi, Moscow, Malceva street, 9</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row d-flex mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Entry Planned :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                    <div class="col d-flex flex-column ">
+                      <p><strong>Exit Planned :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row d-flex mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Entry Actual :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                    <div class="col d-flex flex-column ">
+                      <p><strong>Exit Actual :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Landing -->
+                <div class="container-fluid d-cargo-open">
+                  <!-- Cargo Up -->
+                  <div class="row mb-4">
+                    <div class="d-flex gap-3">
+                      <span class="material-symbols-outlined">flight_land</span>
+                      <div class="col d-flex flex-column gap-1">
+                        <p><strong>Chicago , United State</strong></p>
+                        <p>Rassi, Moscow, Malceva street, 9</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Cargo Center -->
+                  <div class="row d-flex mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Entry Planned :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                    <div class="col d-flex flex-column ">
+                      <p><strong>Exit Planned :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+
+                  </div>
+                  <!-- Cargo Down -->
+                  <div class="row d-flex mb-4">
+                    <div class="col d-flex flex-column">
+                      <p><strong>Entry Actual :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                    <div class="col d-flex flex-column ">
+                      <p><strong>Exit Actual :</strong></p>
+                      <p>29.09.2020 10:00 pm</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Cargo Right -->
+              <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 cargo-right">
+                <!-- Banner -->
+                <div class="container-fluid mb-4">
+                  <div class="row cargo-banner">
+                    <!-- Cargo banner Left  -->
+                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 d-flex flex-column mb-3 gap-5">
+                      <div class="row">
+                        <h5>Total Tracking Statistics</h5>
+                      </div>
+                      <!-- banner 1.row -->
+                      <div class="row gap">
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                      </div>
+                      <!-- banner 2.row -->
+                      <div class="row">
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                      </div>
+                      <!-- banner 3.row -->
+                      <div class="row">
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                        <div class="col-4">
+                          <p>Puprused</p>
+                          <p><strong>2,285 Lb</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Cargo banner Right Image -->
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 d-flex">
+                      <img width="100%" src="img/countries-cargo.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                  <!-- Left -->
+                  <div class="col">
+                    <div class="d-flex flex-column gap-3">
+                      <!-- Up -->
+                      <div class="d-flex flex-column">
+                        <h6 class="mb-3">Shipping Tracket</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <p>CARGO COUNTRIES DATES</p>
+                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                              <button type="button" class="btn">W</button>
+                              <button type="button" class="btn">M</button>
+                              <button type="button" class="btn">6M</button>
+                              <button type="button" class="btn">Y</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Center -->
+                      <h4 class="mb-3">$2,243.34</h4>
+                      <p class="mb-3">
+                        Shipping fees for weekly, monthly and annual
+                        calculations by country
+                      </p>
+                      <div class="d-flex flex-column gap-4">
+                        <p><strong>Volume by Countries</strong></p>
+                        <div class="d-flex flex-column gap-4">
+                          <!-- 1 -->
+                          <div class="d-flex flex-column justify-content-between gap-2">
+                            <!-- Up -->
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div class="d-flex align-items-center gap-2">
+                                <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                                <p>All Countries</p>
+                              </div>
+                              <p>$1,500.10</p>
+                            </div>
+                            <!-- Down -->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                              aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                              <div class="progress-bar bg-black w-100"></div>
+                            </div>
+                          </div>
+                          <!-- 2 -->
+                          <div class="d-flex flex-column justify-content-between gap-2">
+                            <!-- Up -->
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div class="d-flex align-items-center gap-2">
+                                <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                                <p>United State</p>
+                              </div>
+                              <p>$1,050.10</p>
+                            </div>
+                            <!-- Down -->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                              <div class="progress-bar bg-black w-75"></div>
+                            </div>
+                          </div>
+                          <!-- 3 -->
+                          <div class="d-flex flex-column justify-content-between gap-2">
+                            <!-- Up -->
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div class="d-flex align-items-center gap-2">
+                                <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                                <p>Germany</p>
+                              </div>
+                              <p>$820.00</p>
+                            </div>
+                            <!-- Down -->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                              <div class="progress-bar bg-black w-50"></div>
+                            </div>
+                          </div>
+                          <!-- 4 -->
+                          <div class="d-flex flex-column justify-content-between gap-2">
+                            <!-- Up -->
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div class="d-flex align-items-center gap-2">
+                                <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                                <p>United Kingdom</p>
+                              </div>
+                              <p>$390.00</p>
+                            </div>
+                            <!-- Down -->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                              aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                              <div class="progress-bar bg-black w-25"></div>
+                            </div>
+                          </div>
+                          <!-- 5 -->
+                          <div class="d-flex flex-column justify-content-between gap-2">
+                            <!-- Up -->
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div class="d-flex align-items-center gap-2">
+                                <span style="font-size: 20px" class="material-symbols-outlined">location_on</span>
+                                <p>Japan</p>
+                              </div>
+                              <p>$70.00</p>
+                            </div>
+                            <!-- Down -->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                              aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                              <div class="progress-bar bg-black w-25"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Main End -->
+      </div>
+      <!-- Right Header Main End -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
